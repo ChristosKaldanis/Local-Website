@@ -176,7 +176,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['assign_task'])) {
             require 'connection.php';
 
             // Fetch all task lists from the database
-            $sql = "SELECT id, title FROM task_lists";
+            $sql = "SELECT id, title, created_by FROM task_lists";
             $result = $conn->query($sql);
 
             // Check if any task lists are found
@@ -185,7 +185,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['assign_task'])) {
                 while ($row = $result->fetch_assoc()) {
                     $list_id = htmlspecialchars($row['id']);
                     $list_title = htmlspecialchars($row['title']);
-                    echo "<option value='$list_id'>$list_id - $list_title</option>";
+                    $created_by = htmlspecialchars($row['created_by']);
+
+                    // Fetch the username for the assigned_to user
+                    $user_sql = "SELECT username FROM signup WHERE id = '$created_by'";
+                    $user_result = $conn->query($user_sql);
+                    $username = $user_result->fetch_assoc()['username'];
+
+                    echo "<option value='$list_id'>  $list_title - $username </option>";
                 }
             } else {
                 echo "<option value='' disabled>No task lists available</option>";
