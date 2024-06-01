@@ -1,0 +1,255 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 0%, 25%);
+}
+
+.navbar ul {
+    list-style-type: none ;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: hsl(0, 0%, 25%);
+}
+
+.navbar li{
+    float: left;
+}
+
+
+
+.signup-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 100px auto; /* Center horizontally */
+}
+
+h2 {
+    text-align: center;
+    margin: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="text"],
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="password"],
+input[type="email"],
+input[type="key"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px ;
+ 
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.main-heading{
+    margin-bottom: 0;
+    
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .panel {
+    padding: 0 50px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .profile-info {
+    margin-bottom: 20px;
+}
+
+.login-link-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-link-container a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.login-link-container a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Center the list items horizontally */
+}
+
+li {
+    margin-bottom: 10px; /* Add some spacing between list items */
+}
+
+
+label{
+    margin-top: 20px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .panel {
+    padding: 0 50px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .categories {
+    position: fixed;
+    top: 70px; /* Adjust this value to position it vertically */
+    right: 20px; /* Adjust this value to position it horizontally */
+    background-color: #fff;
+    padding: 20px 20px ; /* Top, Right, Bottom, Left */
+    border: none;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+    font-family: 'Helvetica Neue', sans-serif; /* Elegant font */
+    max-width: 200px; /* Limit width for better readability */
+    z-index: 1000; /* Ensure it's above other content */
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease; /* Smooth fade-in transition */
+  }
+  
+  .categories ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .categories ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .categories ul li:hover {
+    color: #007bff; /* Change color on hover */
+    cursor: pointer;
+  }
+  
+  .categories.show {
+    display: block;
+    opacity: 1; /* Fade-in effect when showing */
+  }
+
+
+
+

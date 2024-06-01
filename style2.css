@@ -1,0 +1,156 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 0%, 25%);
+}
+
+.navbar ul {
+    list-style-type: none ;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: hsl(0, 0%, 25%);
+}
+
+.navbar li{
+    float: left;
+}
+
+
+.main-heading{
+    margin-bottom: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .panel {
+    padding: 0 50px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .menu-icon {
+    position: fixed;
+    top: 35px; /* Adjust this value to position it vertically */
+    right: 20px; /* Adjust this value to position it horizontally */
+    cursor: pointer;
+  }
+  
+  .menu-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .menu-icon span:last-child {
+    margin-bottom: 0;
+  }
+  
+  .categories {
+    position: fixed;
+    top: 70px; /* Adjust this value to position it vertically */
+    right: 20px; /* Adjust this value to position it horizontally */
+    background-color: #fff;
+    padding: 20px 20px ; /* Top, Right, Bottom, Left */
+    border: none;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+    font-family: 'Helvetica Neue', sans-serif; /* Elegant font */
+    max-width: 200px; /* Limit width for better readability */
+    z-index: 1000; /* Ensure it's above other content */
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease; /* Smooth fade-in transition */
+  }
+  
+  .categories ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .categories ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .categories ul li:hover {
+    color: #007bff; /* Change color on hover */
+    cursor: pointer;
+  }
+  
+  .categories.show {
+    display: block;
+    opacity: 1; /* Fade-in effect when showing */
+  }
