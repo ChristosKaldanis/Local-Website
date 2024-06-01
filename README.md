@@ -15,7 +15,7 @@ On the Search Lists page, users can search for any list. Similarly, the Search T
 
 Each page features an icon on the right side that allows users to toggle between light mode and dark mode.
 
-#Implementation
+# Implementation
 The website implementation was carried out by Christos Kaldanis, an undergraduate student at the Department of Informatics, Ionian University.
 
 # New Release
