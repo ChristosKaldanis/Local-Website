@@ -185,7 +185,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['assign_task'])) {
                 while ($row = $result->fetch_assoc()) {
                     $list_id = htmlspecialchars($row['id']);
                     $list_title = htmlspecialchars($row['title']);
-                    echo "<option value='$list_id'>$list_title</option>";
+                    echo "<option value='$list_id'>$list_id - $list_title</option>";
                 }
             } else {
                 echo "<option value='' disabled>No task lists available</option>";
