@@ -10,6 +10,9 @@
 # Υλοποίηση
 Η υλοποίηση της ιστοσελίδας αποτελείται πραγματοποιήθηκε από τον Καλδάνη Χρήστο προπτυχιακό φοιτητή στο τμήμα Πληροφορικής του Ιονίου Πανεπιστημίου.
 
+# New Release
+Έχει αναρτηθεί και νέο release το οποίο περιλαμβάνει το dockerization του τρέχοντος Local-Website. Ακολουθεί και public One Drive Link που περιέχει την επίδειξη της λειτουργικότητας μετά το dockerization της ιστοσελίδας: https://1drv.ms/f/c/b876fad25f453a92/EkPN3hytEipBm549RTxgHSABtoBO5jCzjvUoTD0EvzCALQ?e=3We6nb
+
 
 
 
