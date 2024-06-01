@@ -19,7 +19,7 @@ Each page features an icon on the right side that allows users to toggle between
 The website implementation was carried out by Christos Kaldanis, an undergraduate student at the Department of Informatics, Ionian University.
 
 # New Release
-A new release has been posted, which includes the dockerization of the current Local-Website. A public OneDrive link containing a demonstration of the functionality after dockerizing the website is available:
+A new release has been posted, which includes the dockerization of the current Local-Website. A public OneDrive link containing a demonstration of the functionality after dockerizing the website is available: https://1drv.ms/f/c/b876fad25f453a92/EkPN3hytEipBm549RTxgHSABtoBO5jCzjvUoTD0EvzCALQ?e=3We6nb
 
 
 
