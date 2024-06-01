@@ -1,17 +1,25 @@
 # Local-Website
 # Info
 
-# Περιγραφή Ιστοσελίδας
-Η τοπική ιστοσελίδα Local-Website δημιουργήθηκε μέσω XAMPP, περιέχει front end αλλά και back end στοιχεία, και έχει ως σκοπό τη διαχείριση λιστών εργασιών αλλά και εργασιών σε συνδυασμό με την αλληλεπίδραση πολλών χρηστών.
+# Website Description
+The local website, Local-Website, was created using XAMPP and contains both front-end and back-end elements. Its purpose is to manage task lists and individual tasks, facilitating interaction among multiple users.
 
-# Λειτουργικότητα της Ιστοσελίδας
-Αρχικά, πριν την αυθεντικοποίηση του χρήστη υπάρχουν δύο επιλογές στο navigation bar, η σελίδα Home και η σελίδα About. Στη σελίδα Home ο χρήστης μπορεί να κάνει είτε Sign up, είτε Sign in ανάλογα με το αν έχει ήδη λογαριασμό ή οχι. Στη σελίδα About υπάρχει η βασική βοήθεια της ιστοσελίδας όπου ο χρήστης μπορεί να βρεί πληροφορίες σχετικά με κάθε τμήμα της ιστοσελίδας. Αφού αυθεντικοποιηθεί ο χρήστης στο navigation bar εμφανίζονται οι σελίδες Manage Profile, Lists and Tasks, Search Tasks, Search Lists, Export to XML και Sign Out. Στη σελίδα Manage Profile ο χρήστης μπορεί να διαχειριστεί το προφίλ του επεξεργάζοντας τα στοιχεία του ή διαγράφοντας το προφίλ του. Εάν κάποιος χρήστης διαγράψει το προφίλ του, δεν διαγράφεται εντελώς διότι τα στοιχεία του θα πάρουν τυχαίες τιμές ώστε να μην διαγραφούν πλήρως οι ενέργειες που έχει υλοποιήσει. Στη σελίδα Lists and Tasks ο χρήστης μπορεί να κάνει ανάθεση εργασίας σε κάποιον άλλον χρήστη μέσω του username και της λίστας του χρήστη και να διαχειριστεί τις λίστες εργασιών και τις εργασίες του έχοντας τη δυνατότητα να πραγματοποιήσει τη δημιουργία την επεξεργασία αλλά και την διαγραφή τους. Εάν ο χρήστης πραγματοποιήσει τη λειτουργία ανάθεση εργασίας ή τη λειτουργία δημιουργία εργασίας, αυτόματα στέλνεται ειδοποίηση στο κινητό του χρήστη που του ανατίθεται εργασία ή στον τρέχοντα χρήστη που δημιουργεί κάποια εργασία ανάλογα με τη λειτουργία που πραγματοποιήθηκε, με βάση το Push Key του, μέσω του simplepush.io api.  Η πρώτη λίστα και η πρώτη εργασία του κάθε χρήστη δίνονται από τον διαχειριστή της ιστοσελίδας. Προχωράμε στη σελίδα Search Lists, όπου εκεί ο χρήστης μπορεί να αναζητήσει οποιαδήποτε λίστα. Την ίδια λειτουργικότητα περιλαμβάνει επίσης και η σελίδα Search Tasks σχετικά με τις εργασίες. Η επόμενη επιλογή είναι η Export to XML όπου εκεί με ένα κλικ κάνει export όλες τις λίστες μαζί με τις εργασίες του χρήστη σε ένα αρχείο xml. Τέλος, η επιλογή Sign Out αποσυνδέει τον χρήστη και τον οδηγεί στη σελίδα Home. Δεξιά της κάθε σελίδας υπάρχει ενα εικονίδιο το οποίο είναι υπεύθυνο για την εναλλαγή του light mode σε dark mode και αντίστροφα. 
+# Website Functionality
+Initially, before user authentication, there are two options in the navigation bar: Home and About. On the Home page, users can either Sign up or Sign in, depending on whether they already have an account. The About page provides basic help and information about each section of the website.
 
-# Υλοποίηση
-Η υλοποίηση της ιστοσελίδας αποτελείται πραγματοποιήθηκε από τον Καλδάνη Χρήστο προπτυχιακό φοιτητή στο τμήμα Πληροφορικής του Ιονίου Πανεπιστημίου.
+After user authentication, the navigation bar includes the pages Manage Profile, Lists and Tasks, Search Tasks, Search Lists, Export to XML, and Sign Out. On the Manage Profile page, users can manage their profile by editing their details or deleting their profile. If a user deletes their profile, it is not completely erased; the details are assigned random values to ensure that the actions they have performed are not fully deleted.
+
+On the Lists and Tasks page, users can assign tasks to other users via username and the user's list. They can also manage their task lists and tasks, with the ability to create, edit, and delete them. If a user performs task assignment or task creation, a notification is automatically sent to the mobile phone of the user to whom the task is assigned or to the current user creating a task, depending on the performed function, using the simplepush.io API based on their Push Key. The first list and task for each user are provided by the website administrator.
+
+On the Search Lists page, users can search for any list. Similarly, the Search Tasks page allows users to search for any task. The next option is Export to XML, which exports all lists and tasks to an XML file with a single click. Finally, the Sign Out option logs the user out and redirects them to the Home page.
+
+Each page features an icon on the right side that allows users to toggle between light mode and dark mode.
+
+#Implementation
+The website implementation was carried out by Christos Kaldanis, an undergraduate student at the Department of Informatics, Ionian University.
 
 # New Release
-Έχει αναρτηθεί και νέο release το οποίο περιλαμβάνει το dockerization του τρέχοντος Local-Website. Ακολουθεί και public One Drive Link που περιέχει την επίδειξη της λειτουργικότητας μετά το dockerization της ιστοσελίδας: https://1drv.ms/f/c/b876fad25f453a92/EkPN3hytEipBm549RTxgHSABtoBO5jCzjvUoTD0EvzCALQ?e=3We6nb
+A new release has been posted, which includes the dockerization of the current Local-Website. A public OneDrive link containing a demonstration of the functionality after dockerizing the website is available:
 
 
 
