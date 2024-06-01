@@ -14,7 +14,7 @@ if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 
     // Last request was more than SESSION_TIMEOUT seconds ago
     session_unset(); // Unset session variables
     session_destroy(); // Destroy the session
-    die("Η συνεδρία σας έχει λήξει. Παρακαλώ συνδεθείτε ξανά.");
+    header("Location: signin.php?msg=Η συνεδρία σας έχει λήξει. Παρακαλώ συνδεθείτε ξανά.");
 }
 
 // Update last activity time
