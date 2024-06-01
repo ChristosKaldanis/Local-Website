@@ -5,7 +5,7 @@
 The local website, Local-Website, was created using XAMPP and contains both front-end and back-end elements. Its purpose is to manage task lists and individual tasks, facilitating interaction among multiple users.
 
 # Website Functionality
-Initially, before user authentication, there are two options in the navigation bar: Home and About. On the Home page, users can either Sign up or Sign in, depending on whether they already have an account. The About page provides basic help and information about each section of the website.
+Initially, before user authentication, there are two options in the navigation bar: Home and About. On the Home page, users can either Sign up or Log in, depending on whether they already have an account. The About page provides basic help and information about each section of the website.
 
 After user authentication, the navigation bar includes the pages Manage Profile, Lists and Tasks, Search Tasks, Search Lists, Export to XML, and Sign Out. On the Manage Profile page, users can manage their profile by editing their details or deleting their profile. If a user deletes their profile, it is not completely erased; the details are assigned random values to ensure that the actions they have performed are not fully deleted.
 
